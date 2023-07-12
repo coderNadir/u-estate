@@ -1,0 +1,14 @@
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-marker-icon {
+    background: transparent;
+    fill: #0ca678;
+}
+
+.leaflet-popup-content {
+  color: #0ca678;
+  background-color: transparent;
+}

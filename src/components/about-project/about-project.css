@@ -1,0 +1,73 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5rem 2rem;
+}
+
+.swiper-button-prev {
+  background-color: transparent;
+  left: -.1rem;
+}
+
+.swiper-button-prev::after {
+  background-color: transparent;
+}
+
+.swiper-button-next {
+  background-color: transparent;
+  right: -.1rem;
+}
+
+.swiper-button-next::after {
+  background-color: transparent;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 1.4rem;
+  margin-bottom: .5em;
+  font-weight: 300;
+  font-weight: 600;
+}
+
+.swiper-slide .text {
+  font-size: 1rem;
+  max-width: 100%;
+  line-height: 1.5rem;
+}
+
+@media (min-width :768px) {
+  .swiper {
+    width: 80%;
+    margin-bottom: 4rem;
+  }
+
+  .swiper-slide .title {
+    font-size: 1.8rem;
+    padding: 0 1.2rem;
+  }
+
+  .swiper-slide .text {
+    font-size: 1.2rem;
+    max-width: 100%;
+    line-height: 1.8rem;
+    padding: 0 1.2rem;
+  }
+}
