@@ -6,7 +6,7 @@ export function Footer() {
 				Creek Water
 			</h2>
 			{/* separator */}
-			<div className="h-[1px] w-full mb-6 "></div>
+			<div className="h-[1px] bg-main-bg w-full mb-6 "></div>
 
 			{/* details */}
 			<div className="bg-inherit grid md:grid-cols-2">
@@ -25,7 +25,7 @@ export function Footer() {
 							placeholder="email"
 						/>
 						<input
-							className=" bg-main w-full px-4 py-2 text-white font-semibold  rounded-full shadow-lg ring-[1px] ring-main transition-all hover:bg-inherit hover:text-main md:w-1/3"
+							className=" bg-main w-full px-4 py-2 text-white font-semibold  rounded-full shadow-lg ring-[1px] ring-main transition-all hover:bg-inherit hover:text-main hover:cursor-pointer md:w-1/3"
 							type="button"
 							value="subscribe"
 						/>
@@ -33,7 +33,7 @@ export function Footer() {
 				</div>
 				{/* quick links */}
 				<div className="bg-inherit grid grid-cols-2 gap-2 my-8 px-4">
-					<h3 className="bg-inherit col-span-full place-self-start text-2xl text-white mb-4 md:text-cente">
+					<h3 className="bg-inherit col-span-full place-self-start text-2xl text-white text-bold mb-1 border-b">
 						Quick links
 					</h3>
 					<ul className="bg-inherit text-white font-semibold flex flex-col gap-2">
@@ -64,7 +64,7 @@ export function Footer() {
 				All information provided on this website is not a public offer.
 			</p>
 			{/* separator */}
-			<div className="h-[1px] w-full md:w-1/3 m-auto"></div>
+			<div className="h-[1px] bg-main-bg w-full md:w-1/3 m-auto"></div>
 		</footer>
 	);
 }

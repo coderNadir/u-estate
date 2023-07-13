@@ -76,7 +76,7 @@ export function Header() {
 					</div>
 				</div>
 				{/* brochure component */}
-				<div className="grid gap-6 px-2 mt-6 md:w-1/4 md:absolute md:-bottom-28 md:right-20 md:rounded-2xl md:shadow-2xl md:py-4 md:px-6">
+				<div className="grid bg-main-bg gap-6 px-2 mt-6 md:w-1/4 md:absolute md:-bottom-28 md:right-20 md:rounded-2xl md:shadow-2xl md:py-4 md:px-6">
 					<div className="bg-transparent md:absolute md:-top-24">
 						<img
 							src="/images/brochure-transparent.png"

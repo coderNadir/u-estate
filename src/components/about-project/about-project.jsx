@@ -32,7 +32,7 @@ export function AboutProject() {
 				>
 					<div
 						slot="container-start"
-						className="parallax-bg"
+						className="parallax-bg bg-main-bg"
 						// style={{
 						// 	backgroundImage:
 						// 		'url(https://swiperjs.com/demos/images/nature-1.jpg)',

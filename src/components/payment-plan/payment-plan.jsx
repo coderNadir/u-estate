@@ -12,7 +12,7 @@ export function PaymentPlan() {
 			</div>
 			<div className="flex flex-col gap-6 md:flex-row md:w-4/5 md:m-auto">
 				{/* plan 1 */}
-				<div className="w-3/4 m-auto flex flex-col gap-6 px-4 py-6 bg-sec-bg shadow-lg rounded-lg md:hover:scale-105 md:transition-all">
+				<div className="w-5/6 m-auto flex flex-col gap-6 px-4 py-6 bg-sec-bg shadow-lg rounded-lg md:hover:scale-105 md:transition-all">
 					<div className="bg-inherit flex flex-col gap-8 px-4">
 						{/* card header */}
 						<div className="bg-inherit mb-6 text-center font-semibold">
@@ -72,7 +72,7 @@ export function PaymentPlan() {
 					</div>
 				</div>
 				{/* plan 2 */}
-				<div className="w-3/4 m-auto flex flex-col gap-6 px-4 py-6 bg-sec-bg shadow-lg rounded-lg md:hover:scale-110 md:transition-all md:scale-105">
+				<div className="w-5/6 m-auto flex flex-col gap-6 px-4 py-6 bg-sec-bg shadow-lg rounded-lg md:hover:scale-110 md:transition-all md:scale-105">
 					<div className="bg-inherit flex flex-col gap-8 px-4">
 						{/* card header */}
 						<div className="bg-inherit mb-6 text-center font-semibold">
@@ -132,7 +132,7 @@ export function PaymentPlan() {
 					</div>
 				</div>
 				{/* plan 3 */}
-				<div className="w-3/4 m-auto flex flex-col gap-6 px-4 py-6 bg-sec-bg shadow-lg rounded-lg md:hover:scale-105 md:transition-all">
+				<div className="w-5/6 m-auto flex flex-col gap-6 px-4 py-6 bg-sec-bg shadow-lg rounded-lg md:hover:scale-105 md:transition-all">
 					<div className="bg-inherit flex flex-col gap-8 px-4">
 						{/* card header */}
 						<div className="bg-inherit mb-6 text-center font-semibold">

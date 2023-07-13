@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import 'swiper/css/effect-cards';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
 import './places-nearby.css';
 
-import { EffectCards } from 'swiper/modules';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const placesNearbyImages = [
 	{
@@ -48,22 +49,39 @@ export function PlacesNearby() {
 			{/* card swiper effect */}
 			<div>
 				<Swiper
-					effect={'cards'}
+					effect={'coverflow'}
 					grabCursor={true}
-					modules={[EffectCards]}
-					className="mySwiper swiper-nearby"
+					centeredSlides={true}
+					slidesPerView={'auto'}
+					coverflowEffect={{
+						rotate: 50,
+						stretch: 0,
+						depth: 100,
+						modifier: 1,
+						slideShadows: true,
+					}}
+					pagination={true}
+					modules={[EffectCoverflow, Pagination]}
+					className="mySwiper"
 				>
 					{placesNearbyImages.map((data) => {
 						return (
-							<SwiperSlide
-								style={{
-									backgroundImage: `url('${data.path}')`,
-								}}
-								className="swiper-slide-nearby w-full h-full bg-cover bg-center ring-1 ring-main "
-							>
-								<p className="text-center text-tint text-lg px-2 py-1 opacity-50 bg-white rounded-2xl">
-									{data.name}
-								</p>
+							<SwiperSlide className="swiper-slide-nearby">
+								<div
+									style={{
+										backgroundImage: `url('${data.path}')`,
+									}}
+									className="h-full rounded-xl bg-cover bg-center "
+								>
+									<p className="w-2/3 mx-auto text-center text-tint text-sm px-2 py-1 opacity-70 bg-white rounded-2xl md:w-2/5">
+										{data.name}
+									</p>
+								</div>
+								{/* <img
+									src={`${data.path}`}
+									alt=""
+									className='className="swiper-slide-nearb w-full h-auto bg-cover bg-center ring-1 ring-main "'
+								/> */}
 							</SwiperSlide>
 						);
 					})}
