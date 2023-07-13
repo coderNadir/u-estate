@@ -48,7 +48,7 @@ export function Nav() {
 			)}
 
 			{/* Language switcher */}
-			<div className="flex items-center gap-2">
+			<div className="flex items-center gap-2 mr-4">
 				<span className="text-xs font-semibold text-[#868e96]">EN</span>
 
 				<div
@@ -74,7 +74,7 @@ export function Nav() {
 				<span className="text-xs font-semibold text-[#868e96]">AR</span>
 			</div>
 			{/* CTA buttons */}
-			<div className="flex gap-12 place-self-end mr-8">
+			<div className="flex gap-8 place-self-end ">
 				<div className="flex items-center cursor-pointer">
 					<ion-icon
 						ref={iconRefWats}
