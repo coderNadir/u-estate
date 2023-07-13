@@ -34,12 +34,12 @@ export function Infrastructure() {
 	};
 
 	return (
-		<section className="mt-44 flex flex-col h-[70vh] gap-6 px-4 md:px-24 md:mt-64">
+		<section className="mt-44 flex flex-col gap-6 px-4 md:px-24 md:mt-64">
 			<h2 className=" text-main text-4xl font-semibold capitalize animate-puff-in-horizontal md:text-6xl md:text-center">
 				infrastructure
 			</h2>
 			<div className="grid gap-8 ">
-				<ul className="flex flex-row gap-2 justify-around items-center uppercase text-txt-main text-xs md:text-base md:justify-center">
+				<ul className="flex flex-row gap-1 justify-around items-center uppercase text-txt-main text-xs md:text-base md:justify-center">
 					<li
 						onClick={handleClick}
 						data-id="terrace"

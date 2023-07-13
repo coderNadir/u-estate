@@ -10,7 +10,7 @@ import { Parallax, Pagination, Navigation } from 'swiper/modules';
 
 export function AboutProject() {
 	return (
-		<section className="mt-44 h-[70vh] px-4 md:px-24 md:mt-64">
+		<section className="mt-44 px-4 md:px-24 md:mt-64">
 			<h2 className="capitalize text-center text-4xl font-semibold text-main mb-8 md:text-6xl md:mb-16">
 				about the project
 			</h2>
