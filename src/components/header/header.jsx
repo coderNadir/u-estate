@@ -3,9 +3,37 @@ import { Nav } from '../nav/nav';
 
 export function Header() {
 	const buttonsContainerRef = useRef(null);
+	const headerRef = useRef(null);
+
+	const [stickNav, setStickNav] = useState(false);
 	const [isBTNsContainerScrolled, setIsBTNsContainerScrolled] =
 		useState(false);
 
+	// useEffect for nav show on scroll
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				// reset to true if header is visible
+				if (entry.target === headerRef.current) {
+					console.log('😊 is Intersecting: ', entry.isIntersecting);
+					setStickNav(!entry.isIntersecting);
+				}
+			});
+		});
+		// observe if header exists in the DOM
+		if (headerRef.current) {
+			observer.observe(headerRef.current);
+		}
+
+		// unobserve when the component destroyed
+		return () => {
+			if (headerRef.current) {
+				observer.unobserve(headerRef.current);
+			}
+		};
+	}, []);
+
+	// useEffect for buttons
 	useEffect(() => {
 		const btnsContainer = buttonsContainerRef.current;
 
@@ -18,9 +46,9 @@ export function Header() {
 	}, []);
 
 	return (
-		<header className="w-full ">
+		<header ref={headerRef} className="w-full relative">
 			{/* navigation bar */}
-			<Nav></Nav>
+			<Nav stickNav={stickNav}></Nav>
 			{/* main header details */}
 			<div className="relative w-full px-2 md:w-11/12 md:m-auto">
 				{/* background */}
@@ -84,7 +112,7 @@ export function Header() {
 							// style={{
 							// 	shadow: '0 25px 50px -12px rgb(0 0 0 / 0.25)',
 							// }}
-							className="bg-transparent md:w-3/4 md:m-auto md:animate-brochure animate-"
+							className="bg-transparent mx-auto md:w-3/4 md:m-auto md:animate-brochure animate-"
 						/>
 					</div>
 					<h2 className="text-3xl font-bold text-[#3db893] md:mt-8 md:text-[#0ca678]">
