@@ -53,7 +53,7 @@ export function Header() {
 			<div className="relative w-full px-2 md:w-11/12 md:m-auto">
 				{/* background */}
 				<div
-					className="relative grid place-items-center w-full h-[60vh] bg-bottom bg-cover m-auto mt-8 rounded-tr-2xl rounded-tl-2xl md:h-[75vh] md:rounded-2xl"
+					className="relative -z-20 grid place-items-center w-full h-[60vh] bg-bottom bg-cover m-auto mt-8 rounded-tr-2xl rounded-tl-2xl md:h-[75vh] md:rounded-2xl"
 					style={{
 						backgroundImage: "URL('/images/bg-header.jpg')",
 					}}

@@ -28,7 +28,7 @@ export function Nav({ stickNav }) {
 		<nav
 			className={` p-4 w-full grid place-content-between animatecss md:m-auto ${
 				stickNav === true
-					? 'fixed md:bottom-0 md:right-0 bg-sec-bg shadow-xl rounded-lg z-[1100] animatecss-fadeInDown justify-center md:max-w-min md:animatecss-fadeInRight'
+					? 'fixed md:bottom-0 md:right-0 bg-sec-bg shadow-xl rounded-lg z-[1110] animatecss-fadeInDown justify-center md:max-w-min md:animatecss-fadeInRight'
 					: 'md:w-11/12 grid-cols-3 animatecss-fadeIn'
 			}`}
 		>
@@ -134,12 +134,17 @@ export function Nav({ stickNav }) {
 					className={`absolute animatecss top-14 grid gap-6 place-items-center bg-[rgba(249,250,250,0.8)] p-4 rounded-md w-full place-self-center col-span-full 
 				${
 					isOpen
-						? 'translate-y-full animatecss-fadeInDown'
+						? 'translate-y-full animatecss-fadeInDown z-[1112]'
 						: 'animatecss-fadeOutUp'
 				} md:w-1/2`}
 					// `}
 				>
-					<li className="bg-transparent text-[#495057]">Company</li>
+					<li
+						className="bg-transparent text-[#495057]"
+						onClick={() => console.log('clicked 😊😊')}
+					>
+						Company
+					</li>
 					<li className="bg-transparent text-[#495057]">Developer</li>
 					<li className="bg-transparent text-[#495057]">About</li>
 				</ul>
